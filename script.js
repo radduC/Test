@@ -1,15 +1,5 @@
-var toDo = [];
-var task = prompt(`What do you want to do?`);
+list = [4, 5, 6];
 
-while (task !== `quit`) {
-  if (task === `list`) {
-    console.log(toDo);
-  } else if (task === `new`) {
-    task = prompt(`What is the new task?`);
-    toDo.push(task);
-  }
-
-  task = prompt(`What else do you want to do?`);
-}
-
-console.log(toDo);
+list.forEach(element => {
+  element = element + 2;
+});
